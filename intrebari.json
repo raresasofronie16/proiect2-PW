@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "intrebare": "Ce este un document?",
+        "variante": ["O informație stocată pe hârtie", "Un conținut digital structurat", "Un mesaj vocal"],
+        "raspunsCorect": 1 
+    },
+    {
+        "id": 2,
+        "intrebare": "Care este scopul principal al unui document?",
+        "variante": ["De a comunica informații", "De a stoca fișiere", "De a crea prezentări"],
+        "raspunsCorect": 0 
+    },
+    {
+        "id": 3,
+        "intrebare": "Ce este un format de document?",
+        "variante": ["O specificație care definește modul în care informația este prezentată și stocată", "O modalitate de stocare a imaginilor", "Un stil de formatare a textului"],
+        "raspunsCorect": 0 
+    },
+    {
+        "id": 4,
+        "intrebare": "Ce este un fișier DOCX ?",
+        "variante": ["Un format de fișier pentru stocarea documentelor text în Microsoft Word", "Un tip de fișier pentru stocarea imaginilor", "Un format de fișier pentru prezentări PowerPoint"],
+        "raspunsCorect": 0 
+    },
+    {
+        "id": 5,
+        "intrebare": "Ce reprezintă extensia de fișier .JPEG ?",
+        "variante": ["Un format de fișier pentru documente text", "Un format de fișier pentru imagini", " Un format de fișier pentru fișiere audio"],
+        "raspunsCorect": 1 
+    },
+    {
+        "id": 6,
+        "intrebare": "Ce este un fișier CSV?",
+        "variante": ["Un format de fișier pentru animații", "Un format de fișier pentru documente video", "Un format de fișier pentru stocarea bazelor de date"],
+        "raspunsCorect": 2
+    },
+    {
+        "id": 7,
+        "intrebare": "Care dintre următoarele nu este un tip de document electronic?",
+        "variante": ["Document text", "Fișier audio", "Fișier HTML"],
+        "raspunsCorect": 1
+    },
+    {
+        "id": 8,
+        "intrebare": "Ce părere aveți de site-ul nostru?",
+        "variante": ["Voi mai apela cu siguranță!", "Conținut util!", "Foarte OK!"],
+        "raspunsCorect": [0,1,2]
+    }
+
+    
+
+
+
+
+]

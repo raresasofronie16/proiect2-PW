@@ -1,0 +1,41 @@
+[
+    {
+        "utilizator": "utilizator1",
+        "nume": "Popescu",
+        "prenume": "Ion",
+        "parola": "parola1",
+        "tip": "USER"
+    },
+    {
+        "utilizator": "utilizator2",
+        "nume": "Ionescu",
+        "prenume": "Maria",
+        "parola": "parola2",
+        "tip": "USER"
+    },
+    {
+        "utilizator": "rares",
+        "nume": "Asofronie",
+        "prenume": "Rares",
+        "parola": "rares123",
+        "tip": "ADMIN"
+    },
+    {
+        "utilizator": "razvan",
+        "nume": "Vasile",
+        "prenume": "Razvan",
+        "parola": "razvan123",
+        "tip": "USER"
+    },
+    {
+        "utilizator": "admin",
+        "nume": "Pop",
+        "prenume": "Andrei",
+        "parola": "admin",
+        "tip": "ADMIN"
+    }
+
+
+
+
+]

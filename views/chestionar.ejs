@@ -1,0 +1,16 @@
+<form action="/rezultat-chestionar" method="post">
+    <% intrebari.forEach(function(intrebare) { %>
+        <h2><%= intrebare.intrebare %></h2>
+        
+        <% intrebare.variante.forEach(function(varianta, vIndex) { %>
+            <label>
+                <input type="radio" name="intrebare_<%= intrebare.id %>" value="<%= vIndex %>" />
+                <%= varianta %>
+            </label><br>
+        <% }); %>
+    <% }); %>
+
+    <br>
+
+    <button type="submit">Trimite</button>
+</form>

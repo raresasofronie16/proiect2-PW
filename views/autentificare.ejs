@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autentificare</title>
+    <style>
+        .error{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Autentificare</h1>
+    <% if (mesajEroare) { %>
+        <p class="error"><%= mesajEroare %></p>
+    <% } %>
+    <form action="/verificare-autentificare" method="POST">
+        <div>
+            <label for="utilizator">Utilizator:</label>
+            <input type="text" id="utilizator" name="utilizator">
+        </div>
+        <div>
+            <label for="parola">Parolă:</label>
+            <input type="password" id="parola" name="parola">
+        </div>
+        <button type="submit">Autentificare</button>
+    </form>
+</body>
+</html>

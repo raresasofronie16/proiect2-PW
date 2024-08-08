@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc Store</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Bine ați venit la Doc Store!</h1>
+        <div class="header-buttons">
+            <% if(utilizator) { %>
+                <p class="auth-message">Autentificat ca <%= utilizator %></p>
+                <% if(tip) { %>
+                    <p class="role-message">Rol: <%= tip %></p>
+                <% } %>
+
+                <% if(tip === 'ADMIN') { %>
+                    <form action="/admin" method="GET">
+                        <button type="submit">Admin</button>
+                    </form>
+                <% } %>
+                
+                <form action="/delogare" method="GET">
+                    <button type="submit">De-logare</button>
+                </form>
+                
+                <form action="/vizualizare-cos" method="GET">
+                    <button type="submit">Vizualizare Coș</button>
+                </form>
+
+                <form action="/chestionar" method="GET">
+                    <button type="submit">Chestionar</button>
+                </form>
+                
+            <% } else { %>
+                <a href="/autentificare">Pagina de autentificare</a>
+            <% } %>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="/creare-bd" method="POST">
+            <button type="submit">Creare BD</button>
+        </form>
+
+        <form action="/incarcare-bd" method="POST">
+            <button type="submit">Încarcare BD</button>
+        </form>
+
+        <form action="/inserarebd" method="GET">
+            <button type="submit">Inserare Produse în BD</button>
+        </form>
+
+        <h2>Lista de produse disponibile</h2>
+        <div class="product-grid">
+            <% produse.forEach(function(produs) { %>
+                <div class="product">
+                    <strong>Denumire:</strong> <%= produs.denumire %> <br>
+                    <strong>Preț:</strong> <%= produs.pret %>
+                    <% if(utilizator) { %>
+                        <form action="/adauga-in-cos" method="POST">
+                            <input type="hidden" name="produsId" value="<%= produs.id %>">
+                            <button type="submit">Adaugă în coș</button>
+                        </form>
+                    <% } %>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Doc Store. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>

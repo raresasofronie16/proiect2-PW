@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coș de cumparaturi</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Cos de cumpărături</h1>
+    <ul>
+        <% produseCos.forEach(function(produs) { %>
+            <li>
+
+                <strong>Denumire:</strong> <%= produs.denumire %> <br>
+                <strong>Preț:</strong> <%= produs.pret %>
+
+
+            </li>
+
+
+        <% }) %>
+
+    </ul>
+
+
+    <% if(produseCos.length > 0) { %>
+        <button onclick="afiseazaMesaj()">Finalizare Comandă
+        </button>
+    <% } %>
+
+    <br><br>
+
+
+    <div id="mesaj"style="display: none;">
+        Comanda a fost finalizată cu succes!
+    </div>
+
+
+    <script>
+       function afiseazaMesaj() {
+            var mesaj = document.getElementById("mesaj");
+            mesaj.style.display = "block";
+        }
+    </script>
+
+    <br>
+    <br>
+
+
+
+<a href="/">Meniu Principal</a>
+
+
+
+</body>
+</html>
